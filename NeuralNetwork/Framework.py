@@ -165,10 +165,10 @@ class TransformerLearning:
             acc_valid_hist.append(acc_valid)
 
             if acc_valid > best_acc_valid:
-                # torch.save(model, f'model.pt')
+                torch.save(self.model, f'model.pt')
                 best_acc_valid = acc_valid
                 # self.beast_model = self.model
-                # print('model update')
+                print('model update')
 
 
 
